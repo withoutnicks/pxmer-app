@@ -1,0 +1,23 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 16 16"
+    shape-rendering="crispEdges"
+>
+    <rect width="16" height="16" fill="#0c0c0c" />
+    <!-- Spine -->
+    <rect x="3" y="4" width="2" height="9" fill="#ff9100" />
+    <!-- Top Bar -->
+    <rect x="5" y="4" width="1" height="2" fill="#ffe600" />
+    <rect x="6" y="4" width="1" height="2" fill="#ccff00" />
+    <rect x="7" y="4" width="1" height="2" fill="#99ff00" />
+    <rect x="8" y="4" width="1" height="2" fill="#33ff00" />
+    <rect x="9" y="4" width="2" height="2" fill="#00ff66" />
+    <!-- Right Loop Block -->
+    <rect x="9" y="6" width="2" height="2" fill="#00ff88" />
+    <!-- Middle Bar -->
+    <rect x="5" y="8" width="1" height="2" fill="#ffe600" />
+    <rect x="6" y="8" width="1" height="2" fill="#ccff00" />
+    <rect x="7" y="8" width="1" height="2" fill="#99ff00" />
+    <rect x="8" y="8" width="1" height="2" fill="#33ff00" />
+    <rect x="9" y="8" width="2" height="2" fill="#00ff66" />
+</svg>

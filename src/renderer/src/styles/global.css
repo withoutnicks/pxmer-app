@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    color-scheme: dark;
+    --bg: #1a1a1a;
+    --surface: #262626;
+    --border: #3b3b3b;
+    --text: #f0f0f0;
+    --accent: #b9f500;
+    --muted: #a3a3a3;
+    --white-10: rgb(255 255 255 / 10%);
+    --font: "Forum";
+}
+
+:root[data-theme="light"] {
+    color-scheme: light;
+    --bg: #f4f1e8;
+    --surface: #fffdf5;
+    --border: #d9d1bd;
+    --text: #24221c;
+    --accent: #a05e00;
+    --muted: #57534a;
+    --white-10: rgb(0 0 0 / 8%);
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--font);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+input {
+    font-family: var(--font);
+    outline: none;
+}
+
+@font-face {
+    font-family: "Bitcount";
+    src: url("../../assets/Bitcount-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Forum";
+    src: url("../../assets/Forum-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-rendering: optimizeLegibility;
+}
