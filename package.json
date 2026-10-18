@@ -8,7 +8,8 @@
     "dev": "electron-vite dev",
     "build": "electron-vite build",
     "preview": "electron-vite preview",
-    "start": "electron ."
+    "start": "electron .",
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
   },
   "devEngines": {
     "packageManager": {
