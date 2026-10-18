@@ -1,19 +1,21 @@
-import { app, shell, BrowserWindow, ipcMain, Notification } from "electron";
+import { app, shell, BrowserWindow } from "electron";
 import { join } from "path";
 import { electronApp, optimizer, is } from "@electron-toolkit/utils";
 import log from "electron-log/main";
-import { loadSettings, saveSettings } from "./store";
+import { registerIpcHandlers } from "./ipc";
+import type { SessionController } from "./session";
 
 log.initialize();
 log.info("PXmer starting...");
 
 let mainWindow: BrowserWindow | null = null;
+// Se asigna en whenReady; antes de eso los handlers aún no existen.
+let session: SessionController | null = null;
 
 function createWindow(): void {
   mainWindow = new BrowserWindow({
     width: 560,
     height: 400,
-    resizable: false,
     autoHideMenuBar: true,
     backgroundColor: "#0d0d0d",
     title: "",
@@ -52,20 +54,17 @@ app.whenReady().then(() => {
     optimizer.watchWindowShortcuts(window);
   });
 
-  // IPC handlers
-  ipcMain.handle("get-settings", () => loadSettings());
-  ipcMain.handle("save-settings", (_, settings) => saveSettings(settings));
-  ipcMain.handle("show-notification", (_, title: string, body: string) => {
-    if (Notification.isSupported()) {
-      new Notification({ title, body }).show();
-    }
-  });
+  session = registerIpcHandlers(() => mainWindow);
 
   createWindow();
 
   app.on("activate", () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow();
   });
+});
+
+app.on("before-quit", () => {
+  session?.stop();
 });
 
 app.on("window-all-closed", () => {
