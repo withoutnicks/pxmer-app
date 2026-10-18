@@ -30,7 +30,7 @@ export function BreakLimitDialog({
       <div className="limit-dialog-panel">
         <p className="limit-dialog-title">Límite alcanzado</p>
         <p className="limit-dialog-body">
-          Ya descansaste por mucho tiempo.
+          Descansaste por mucho tiempo.
         </p>
         <div className="limit-dialog-actions">
           <button
