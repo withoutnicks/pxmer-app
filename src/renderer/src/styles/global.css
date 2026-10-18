@@ -13,6 +13,9 @@
     --border: #3b3b3b;
     --text: #f0f0f0;
     --accent: #b9f500;
+    --danger: #fc6d6d;
+    --warning: #e9e300;
+    --info: #373aff;
     --muted: #a3a3a3;
     --white-10: rgb(255 255 255 / 10%);
     --font: "Forum";
@@ -25,6 +28,9 @@
     --border: #d9d1bd;
     --text: #24221c;
     --accent: #a05e00;
+    --danger: #e60606;
+    --warning: #35aec4;
+    --info: #373aff;
     --muted: #57534a;
     --white-10: rgb(0 0 0 / 8%);
 }
@@ -59,7 +65,7 @@ input {
 
 @font-face {
     font-family: "Bitcount";
-    src: url("../../assets/Bitcount-Regular.ttf") format("truetype");
+    src: url("../../assets/fonts/Bitcount-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-rendering: optimizeLegibility;
@@ -67,7 +73,15 @@ input {
 
 @font-face {
     font-family: "Forum";
-    src: url("../../assets/Forum-Regular.ttf") format("truetype");
+    src: url("../../assets/fonts/Forum-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "PressStart2P";
+    src: url("../../assets/fonts/PressStart2P-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-rendering: optimizeLegibility;
