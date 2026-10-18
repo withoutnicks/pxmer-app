@@ -1,0 +1,244 @@
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.dot {
+    font-size: 48px;
+    color: var(--accent);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 32px 24px;
+    justify-content: center;
+}
+
+.header {
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    & section {
+        display: flex;
+        gap: 8px;
+    }
+}
+
+.title {
+    font-family: "Bitcount";
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 2px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.degrade {
+    display: inline-block;
+    background-image: linear-gradient(0.25turn,
+            #e07a00,
+            #e9e300,
+            #b9f500,
+            #00f519);
+    background-clip: text;
+    color: transparent;
+    image-rendering: pixelated;
+}
+
+:root[data-theme="light"] .degrade {
+    background-image: linear-gradient(0.25turn,
+            #a85400,
+            #7a7000,
+            #4d8a00,
+            #007a12);
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 6px;
+}
+
+.label {
+    font-size: 13px;
+    color: var(--text);
+
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 4px;
+}
+
+.input {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 10px 12px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.hint {
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.hint-error {
+    color: var(--accent);
+}
+
+.start-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.start-btn {
+    font-family: "Bitcount";
+    background: var(--white-10);
+    color: var(--text);
+    font-size: 16px;
+    padding: 14px 0;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn {
+    background: var(--white-10);
+    color: var(--text);
+    padding: 4px;
+}
+
+.limit-dialog {
+    position: fixed;
+    inset: 0;
+    background: rgb(0 0 0 / 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.limit-dialog-panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 340px;
+}
+
+.limit-dialog-title {
+    font-family: "PressStart2P";
+    font-size: 13px;
+    color: var(--accent);
+}
+
+.limit-dialog-body {
+    font-size: 13px;
+    color: var(--text);
+}
+
+.limit-dialog-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+/* --- Temporizador (Etapa 2) --- */
+
+.timer-view {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 32px 24px;
+    gap: 24px;
+}
+
+.timer-header {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.timer-kind {
+    font-family: "PressStart2P";
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--accent);
+    text-align: center;
+    margin-bottom: 8px;
+
+    &.work {
+        color: var(--danger)
+    }
+
+    &.paused {
+        color: var(--warning)
+    }
+
+    &.limit {
+        color: var(--info)
+    }
+}
+
+.timer-clock {
+    font-family: "PressStart2P";
+    font-size: 60px;
+    line-height: 1.4;
+    color: var(--text);
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+.timer-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.timer-btn {
+    font-family: "Bitcount";
+    background: var(--white-10);
+    color: var(--text);
+    font-size: 14px;
+    padding: 12px 14px;
+    letter-spacing: 2px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+}
+
+.timer-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}

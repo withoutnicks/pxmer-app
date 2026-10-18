@@ -1,4 +1,5 @@
-import { useId, type ReactNode, JSX } from "react";
+import { useId, type ReactNode, type JSX } from "react";
+import type { Theme } from "@shared/settings";
 
 type IconProps = {
   title?: string;
@@ -46,7 +47,8 @@ export function BreakLimitIcon({ title }: IconProps): JSX.Element {
   );
 }
 
-export function SunIcon({ title }: IconProps): JSX.Element {
+/** Solo se usa vía ThemeIcon; queda fuera de la API pública del archivo. */
+function SunIcon({ title }: IconProps): JSX.Element {
   return (
     <SvgIcon title={title} size={24}>
       <path d="M13 22h-2v-3h2v3Zm-6-3H5v-2h2v2Zm12 0h-2v-2h2v2ZM15 9h2v6h-2v2H9v-2H7V9h2V7h6v2ZM5 13H2v-2h3v2Zm17 0h-3v-2h3v2ZM7 7H5V5h2v2Zm12 0h-2V5h2v2Zm-6-2h-2V2h2v3Z" />
@@ -54,20 +56,15 @@ export function SunIcon({ title }: IconProps): JSX.Element {
   );
 }
 
-export function MoonIcon({ title }: IconProps): JSX.Element {
+/** Solo se usa vía ThemeIcon; queda fuera de la API pública del archivo. */
+function MoonIcon({ title }: IconProps): JSX.Element {
   return (
     <SvgIcon title={title} size={24}>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path d="M18 22H8v-2h10v2ZM8 20H6v-2h2v2Zm12 0h-2v-2h2v2ZM6 18H4v-2h2v2Zm16 0h-2v-4h-2v-2h2v-2h2v8ZM4 16H2V6h2v10Zm14 0h-6v-2h6v2Zm-6-2h-2v-2h2v2Zm-2-2H8V6h2v6ZM6 6H4V4h2v2Zm8-2h-2v2h-2V4H6V2h8v2Z" />
-      </svg>
+      <path d="M18 22H8v-2h10v2ZM8 20H6v-2h2v2Zm12 0h-2v-2h2v2ZM6 18H4v-2h2v2Zm16 0h-2v-4h-2v-2h2v-2h2v8ZM4 16H2V6h2v10Zm14 0h-6v-2h6v2Zm-6-2h-2v-2h2v2Zm-2-2H8V6h2v6ZM6 6H4V4h2v2Zm8-2h-2v2h-2V4H6V2h8v2Z" />
     </SvgIcon>
   );
 }
 
-export function ThemeIcon({ theme }: { theme: "dark" | "light" }): JSX.Element {
+export function ThemeIcon({ theme }: { theme: Theme }): JSX.Element {
   return theme === "dark" ? <SunIcon /> : <MoonIcon />;
 }
