@@ -30,10 +30,10 @@ function useCachedSound(url: string): () => void {
 
 /** Feedback de clic genérico: botones y atajos de teclado. */
 export function useTapSound(): () => void {
-  return useCachedSound("../assets/sounds/tap_01.wav");
+  return useCachedSound("sounds/tap_01.wav");
 }
 
 /** Reservado al cambio de tema. */
 export function useToggleSound(): () => void {
-  return useCachedSound("../assets/sounds/toggle_on.wav");
+  return useCachedSound("sounds/toggle_on.wav");
 }

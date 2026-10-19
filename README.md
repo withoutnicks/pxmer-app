@@ -1,12 +1,11 @@
 # PXmer
 
-Aplicación de escritorio de temporizador Pomodoro con estética oscura de terminal, inspirada visualmente en [Tuime](https://github.com/nthnd/tuime). Sin backend, sin cuentas, sin integraciones de música.
+Aplicación de escritorio de temporizador Pomodoro con estética oscura de terminal, inspirada visualmente en [Tuime](https://github.com/nthnd/tuime). Sin backend, sin cuentas.
 
 ## Requisitos
 
 - Node.js
 - pnpm
-- Windows (plataforma objetivo inicial)
 
 ## Instalación y desarrollo
 
@@ -22,6 +21,23 @@ pnpm dev
 | `pnpm dev` | Modo desarrollo con recarga |
 | `pnpm build` | Build de producción (main, preload, renderer) |
 | `pnpm start` | Ejecuta el build (`out/`) sin recarga |
+| `pnpm dist` | Genera el portable en `dist/` (requiere `pnpm build` previo) |
+| `pnpm dist:win` | Build + portable de Windows en un solo paso |
+
+## Generar el ejecutable
+
+```bash
+pnpm build
+pnpm dist
+```
+
+El resultado es **`dist/PXmer 1.0.0.exe`** — un `.exe` portable autocontenido (no requiere instalación).
+
+Para publicarlo en un Release de GitHub: pestaña **Releases** → **Draft a new release** → adjuntar solo el `.exe` como asset.
+
+## Nota sobre el ícono
+
+El ícono (`resources/icon.ico`) debe tener al menos una entrada de **256×256 px**; electron-builder rechaza `.ico` de menor resolución.
 
 ## Atajos de teclado (con la app enfocada)
 
@@ -38,7 +54,8 @@ Durante el descanso o en el popup de límite, `Espacio` no hace nada (el descans
 - **Trabajo:** cuenta regresiva (25 min por defecto, rango 5–90 min), pausable.
 - **Descanso:** cuenta ascendente, arranca automático (límite 10 min por defecto, rango 1–20 min). Al llegar al límite aparece un popup con **Siguiente** / **Terminar** y notificación de escritorio.
 
-Los ajustes se configuran antes de iniciar y quedan fijos durante la sesión; los cambios se aplican en la siguiente. Se guardan en `settings.json` junto con la preferencia de tema (oscuro por defecto).
+Los ajustes se configuran antes de iniciar y quedan fijos durante la sesión; los cambios se aplican en la siguiente. 
+Se guardan en `settings.json` junto con la preferencia de tema (oscuro por defecto).
 
 ## Estructura
 
@@ -49,7 +66,3 @@ src/
 ├── shared/     # Tipos compartidos (settings, session) y reducer puro
 └── renderer/   # UI en React + Vite
 ```
-
-## Nota sobre el ícono
-
-En desarrollo (`pnpm dev`), la barra de tareas muestra el ícono genérico de Electron y las notificaciones aparecen a nombre de "Electron". Esto se resuelve al empaquetar con `electron-builder`.

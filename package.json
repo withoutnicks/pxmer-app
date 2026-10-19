@@ -8,7 +8,9 @@
     "dev": "electron-vite dev",
     "build": "electron-vite build",
     "preview": "electron-vite preview",
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "electron-builder",
+    "dist:win": "electron-builder --win"
   },
   "devEngines": {
     "packageManager": {
@@ -29,6 +31,7 @@
     "@types/react-dom": "19.1.5",
     "@vitejs/plugin-react": "4.5.2",
     "electron": "44.7.1",
+    "electron-builder": "^26.15.3",
     "electron-vite": "3.1.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
