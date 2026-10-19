@@ -167,45 +167,45 @@ importers:
   .:
     dependencies:
       '@electron-toolkit/utils':
-        specifier: ^4.0.0
-        version: 4.0.0(electron@44.7.2)
+        specifier: 4.0.0
+        version: 4.0.0(electron@44.7.1)
       electron-log:
-        specifier: ^5.3.4
-        version: 5.4.4
+        specifier: 5.3.4
+        version: 5.3.4
     devDependencies:
       '@electron-toolkit/preload':
-        specifier: ^3.0.1
-        version: 3.0.2(electron@44.7.2)
+        specifier: 3.0.1
+        version: 3.0.1(electron@44.7.1)
       '@types/node':
-        specifier: ^22.15.21
-        version: 22.20.5
+        specifier: 22.15.21
+        version: 22.15.21
       '@types/react':
-        specifier: ^19.1.4
-        version: 19.3.0
+        specifier: 19.1.4
+        version: 19.1.4
       '@types/react-dom':
-        specifier: ^19.1.5
-        version: 19.3.0(@types/react@19.3.0)
+        specifier: 19.1.5
+        version: 19.1.5(@types/react@19.1.4)
       '@vitejs/plugin-react':
-        specifier: ^4.5.2
-        version: 4.7.0(vite@6.4.4(@types/node@22.20.5))
+        specifier: 4.5.2
+        version: 4.5.2(vite@6.3.5(@types/node@22.15.21))
       electron:
-        specifier: ^44.7.1
-        version: 44.7.2
+        specifier: 44.7.1
+        version: 44.7.1
       electron-vite:
-        specifier: ^3.0.1
-        version: 3.1.0(vite@6.4.4(@types/node@22.20.5))
+        specifier: 3.1.0
+        version: 3.1.0(vite@6.3.5(@types/node@22.15.21))
       react:
-        specifier: ^19.1.0
-        version: 19.3.0
+        specifier: 19.1.0
+        version: 19.1.0
       react-dom:
-        specifier: ^19.1.0
-        version: 19.3.0(react@19.3.0)
+        specifier: 19.1.0
+        version: 19.1.0(react@19.1.0)
       typescript:
-        specifier: ^5.8.3
-        version: 5.9.3
+        specifier: 5.8.3
+        version: 5.8.3
       vite:
-        specifier: ^6.3.5
-        version: 6.4.4(@types/node@22.20.5)
+        specifier: 6.3.5
+        version: 6.3.5(@types/node@22.15.21)
 
 packages:
 
@@ -302,8 +302,8 @@ packages:
     resolution: {integrity: sha512-+bqFCP98pLI0Tt0XQo1TmlXtwjWchISndDOxCkEcIuUgXWpBnLyRI+2DU+mesvnMMX6L1XDqYNA0lXNDHd/yiA==}
     engines: {node: '>=22.12.0'}
 
-  '@electron-toolkit/preload@3.0.2':
-    resolution: {integrity: sha512-TWWPToXd8qPRfSXwzf5KVhpXMfONaUuRAZJHsKthKgZR/+LqX1dZVSSClQ8OTAEduvLGdecljCsoT2jSshfoUg==}
+  '@electron-toolkit/preload@3.0.1':
+    resolution: {integrity: sha512-EzoQmpK8jqqU8YnM5jRe0GJjGVJPke2KtANqz8QtN2JPT96ViOvProBdK5C6riCm0j1T8jjAGVQCZLQy9OVoIA==}
     peerDependencies:
       electron: '>=13.0.0'
 
@@ -495,8 +495,8 @@ packages:
     os: [linux]
     libc: [glibc]
 
-  '@rolldown/pluginutils@1.0.0-beta.27':
-    resolution: {integrity: sha512-+d0F4MKMCbeVUJwG96uQ4SgAznZNSq93I3V+9NHA4OpvqG8mRCpGdKmK8l/dl02h2CCDHwW2FqilnTyDcAnqjA==}
+  '@rolldown/pluginutils@1.0.0-beta.11':
+    resolution: {integrity: sha512-L/gAA/hyCSuzTF1ftlzUSI/IKr2POHsv1Dd78GfqkR83KMNuswWD61JxGV2L7nRwBBBSDr6R1gCkdTmoN7W4ag==}
 
   '@rollup/rollup-android-arm-eabi@4.64.6':
     resolution: {integrity: sha512-FkO19Fowv/OQeJZPVfdetJaI3/VpbZmBsnmAlR/rQ+b3QwfiGQiOpVegpSRH331kelvHTVw9hXYG3DwjAaRzyQ==}
@@ -651,25 +651,25 @@ packages:
   '@types/estree@1.0.9':
     resolution: {integrity: sha512-GhdPgy1el4/ImP05X05Uw4cw2/M93BCUmnEvWZNStlCzEKME4Fkk+YpoA5OiHNQmoS7Cafb8Xa3Pya8m1Qrzeg==}
 
-  '@types/node@22.20.5':
-    resolution: {integrity: sha512-U2+DNr+wSjpsTS/wZGYHq7GcwfuSmKiKvoPvK22zwTlRhU91yOniN4qRR5KhIjvif7ysw/dz/hKmfDH0Ris4aA==}
+  '@types/node@22.15.21':
+    resolution: {integrity: sha512-EV/37Td6c+MgKAbkcLG6vqZ2zEYHD7bvSrzqqs2RIhbA6w3x+Dqz8MZM3sP6kGTeLrdoOgKZe+Xja7tUB2DNkQ==}
 
   '@types/node@24.19.2':
     resolution: {integrity: sha512-93d49wCWJkCyN87MxLpNN6KXPCwFw7bVUg79mGUV1OS40JGWwVCr8n61DXCSqz7CV6/VfPkb7xec7uP2M+QHWQ==}
 
-  '@types/react-dom@19.3.0':
-    resolution: {integrity: sha512-ZI7bU42mZXXKHn/qNLEw2IrbiINU7X5+vfgdixBHkCNpYWXjKgfQ/P+uyGb5CjOLB9UcnTeg3rylQtV2hym44Q==}
+  '@types/react-dom@19.1.5':
+    resolution: {integrity: sha512-CMCjrWucUBZvohgZxkjd6S9h0nZxXjzus6yDfUb+xLxYM7VvjKNH1tQrE9GWLql1XoOP4/Ds3bwFqShHUYraGg==}
     peerDependencies:
-      '@types/react': ^19.3.0
+      '@types/react': ^19.0.0
 
-  '@types/react@19.3.0':
-    resolution: {integrity: sha512-N0rFCuH9YoxG9/m61l9MfpJKfmLOVU0em7ipIz6TRgSSkvReLB9vL85GB+yr8Bs5leqpvg96JSwF4ZS1s4viQg==}
+  '@types/react@19.1.4':
+    resolution: {integrity: sha512-EB1yiiYdvySuIITtD5lhW4yPyJ31RkJkkDw794LaQYrxCSaQV/47y5o1FMC4zF9ZyjUjzJMZwbovEnT5yHTW6g==}
 
-  '@vitejs/plugin-react@4.7.0':
-    resolution: {integrity: sha512-gUu9hwfWvvEDBBmgtAowQCojwZmJ5mcLn3aufeCsitijs3+f2NsrPtlAWIR6OPiqljl96GVCUbLe0HyqIpVaoA==}
+  '@vitejs/plugin-react@4.5.2':
+    resolution: {integrity: sha512-QNVT3/Lxx99nMQWJWF7K4N6apUEuT0KlZA3mx/mVaoGj3smm/8rc8ezz15J1pcbcjDK0V15rpHetVfya08r76Q==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
-      vite: ^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
+      vite: ^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0-beta.0
 
   baseline-browser-mapping@2.11.28:
     resolution: {integrity: sha512-br0LOmjJqr6Rt4AEkadbcNf67Zpo7EPwKsWbjnRrJIa1QYFHQBqM4C7F2WTbV8ahTEcg1Eo+Y0aWjjORInYFyA==}
@@ -703,8 +703,8 @@ packages:
       supports-color:
         optional: true
 
-  electron-log@5.4.4:
-    resolution: {integrity: sha512-istWgaXjBfURBSS8LWVW9C3jsc6+ac+tY1lXrQEOTp0lVj+a4OlO1Tmqb36GgnEUDv92DGC9VI1HNXwJinWpgA==}
+  electron-log@5.3.4:
+    resolution: {integrity: sha512-QLj0EbsA5R5Yy4vjGlLe7m8hPNZ/Enp7c7a2WH7RUPr0hIOp0vDaC+6bJM0th6+uZKiZGGH5a2aKzvYp3eYwDQ==}
     engines: {node: '>= 14'}
 
   electron-to-chromium@1.5.455:
@@ -721,8 +721,8 @@ packages:
       '@swc/core':
         optional: true
 
-  electron@44.7.2:
-    resolution: {integrity: sha512-u3Pbz0Hi1sSSwBMz2v8LiagsfUG4QURPUe/qphM+g4THKP8o4BYdnuboyhlLO8HIC/KfV5rvltyacbP4jEq9yw==}
+  electron@44.7.1:
+    resolution: {integrity: sha512-41b08f4Lq55NiH2UzLaE4WMdW3ufFfln3sAVeXpnRrFbzOwBZckK3XpxlMvPcgHbNNApYiOr3r3hMD+Oyrq2dw==}
     engines: {node: '>= 22.12.0'}
     hasBin: true
 
@@ -806,17 +806,17 @@ packages:
     resolution: {integrity: sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==}
     engines: {node: '>=0.4.0'}
 
-  react-dom@19.3.0:
-    resolution: {integrity: sha512-JDk8dgif51OjFoDE70+OT9ICyYr+69HlmihNwp1+Nsfbna3t5sIiCa9ZJktDmQ4/1b/rn26hIAR2uYXDMr5r0Q==}
+  react-dom@19.1.0:
+    resolution: {integrity: sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g==}
     peerDependencies:
-      react: ^19.3.0
+      react: ^19.1.0
 
   react-refresh@0.17.0:
     resolution: {integrity: sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==}
     engines: {node: '>=0.10.0'}
 
-  react@19.3.0:
-    resolution: {integrity: sha512-E8LUcbtBWt20bbl2YoHfx4ZDBdxVTfOKtCZn9cDSJ4l6/nuoApcpIBcj47t2wZoVX8g2ZHuMHbiShgCR1T5Sog==}
+  react@19.1.0:
+    resolution: {integrity: sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==}
     engines: {node: '>=0.10.0'}
 
   rollup@4.64.6:
@@ -824,8 +824,8 @@ packages:
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
-  scheduler@0.28.0:
-    resolution: {integrity: sha512-juorfCmIkIw8tT+p5BXSm6PJjQF/ycEYmKyzURCIt/RaZIhL+PulbQ9Yu2z1HdOJDdqDTlxA1+xKBmHXJsczAw==}
+  scheduler@0.26.0:
+    resolution: {integrity: sha512-NlHwttCI/l5gCPR3D1nNXtWABUmBwvZpEQiD4IXSbIDq8BzLIK/7Ir5gTFSGZDUu37K5cMNp0hFtzO38sC7gWA==}
 
   semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
@@ -848,8 +848,8 @@ packages:
     resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
     engines: {node: '>=12.0.0'}
 
-  typescript@5.9.3:
-    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+  typescript@5.8.3:
+    resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -869,8 +869,8 @@ packages:
     peerDependencies:
       browserslist: '>= 4.21.0'
 
-  vite@6.4.4:
-    resolution: {integrity: sha512-xGjU/SyjeNyb0E4KxXBvYz/1C+3JXuujvf2hXNOtnlcE+58o5ajd9N2/n2VhkiJvpCP2qQasnUpx5PXNeI+p1Q==}
+  vite@6.3.5:
+    resolution: {integrity: sha512-cZn6NDFE7wdTpINgs++ZJ4N49W2vRp8LCKrn3Ob1kYNtOo21vfDoaV5GzBfLU4MovSAB8uNRm4jgzVQZ+mBzPQ==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -1033,13 +1033,13 @@ snapshots:
 
   '@electron-internal/extract-zip@1.0.5': {}
 
-  '@electron-toolkit/preload@3.0.2(electron@44.7.2)':
+  '@electron-toolkit/preload@3.0.1(electron@44.7.1)':
     dependencies:
-      electron: 44.7.2
+      electron: 44.7.1
 
-  '@electron-toolkit/utils@4.0.0(electron@44.7.2)':
+  '@electron-toolkit/utils@4.0.0(electron@44.7.1)':
     dependencies:
-      electron: 44.7.2
+      electron: 44.7.1
 
   '@electron/get@5.1.0':
     dependencies:
@@ -1154,7 +1154,7 @@ snapshots:
   '@napi-rs/lzma-linux-x64-gnu@1.5.1':
     optional: true
 
-  '@rolldown/pluginutils@1.0.0-beta.27': {}
+  '@rolldown/pluginutils@1.0.0-beta.11': {}
 
   '@rollup/rollup-android-arm-eabi@4.64.6':
     optional: true
@@ -1254,7 +1254,7 @@ snapshots:
 
   '@types/estree@1.0.9': {}
 
-  '@types/node@22.20.5':
+  '@types/node@22.15.21':
     dependencies:
       undici-types: 6.21.0
 
@@ -1262,23 +1262,23 @@ snapshots:
     dependencies:
       undici-types: 7.24.6
 
-  '@types/react-dom@19.3.0(@types/react@19.3.0)':
+  '@types/react-dom@19.1.5(@types/react@19.1.4)':
     dependencies:
-      '@types/react': 19.3.0
+      '@types/react': 19.1.4
 
-  '@types/react@19.3.0':
+  '@types/react@19.1.4':
     dependencies:
       csstype: 3.2.3
 
-  '@vitejs/plugin-react@4.7.0(vite@6.4.4(@types/node@22.20.5))':
+  '@vitejs/plugin-react@4.5.2(vite@6.3.5(@types/node@22.15.21))':
     dependencies:
       '@babel/core': 7.29.7
       '@babel/plugin-transform-react-jsx-self': 7.29.7(@babel/core@7.29.7)
       '@babel/plugin-transform-react-jsx-source': 7.29.7(@babel/core@7.29.7)
-      '@rolldown/pluginutils': 1.0.0-beta.27
+      '@rolldown/pluginutils': 1.0.0-beta.11
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 6.4.4(@types/node@22.20.5)
+      vite: 6.3.5(@types/node@22.15.21)
     transitivePeerDependencies:
       - supports-color
 
@@ -1304,11 +1304,11 @@ snapshots:
     dependencies:
       ms: 2.1.3
 
-  electron-log@5.4.4: {}
+  electron-log@5.3.4: {}
 
   electron-to-chromium@1.5.455: {}
 
-  electron-vite@3.1.0(vite@6.4.4(@types/node@22.20.5)):
+  electron-vite@3.1.0(vite@6.3.5(@types/node@22.15.21)):
     dependencies:
       '@babel/core': 7.29.7
       '@babel/plugin-transform-arrow-functions': 7.29.7(@babel/core@7.29.7)
@@ -1316,11 +1316,11 @@ snapshots:
       esbuild: 0.25.12
       magic-string: 0.30.21
       picocolors: 1.1.1
-      vite: 6.4.4(@types/node@22.20.5)
+      vite: 6.3.5(@types/node@22.15.21)
     transitivePeerDependencies:
       - supports-color
 
-  electron@44.7.2:
+  electron@44.7.1:
     dependencies:
       '@electron-internal/extract-zip': 1.0.5
       '@electron/get': 5.1.0
@@ -1404,14 +1404,14 @@ snapshots:
 
   progress@2.0.3: {}
 
-  react-dom@19.3.0(react@19.3.0):
+  react-dom@19.1.0(react@19.1.0):
     dependencies:
-      react: 19.3.0
-      scheduler: 0.28.0
+      react: 19.1.0
+      scheduler: 0.26.0
 
   react-refresh@0.17.0: {}
 
-  react@19.3.0: {}
+  react@19.1.0: {}
 
   rollup@4.64.6:
     dependencies:
@@ -1445,7 +1445,7 @@ snapshots:
       '@rollup/rollup-win32-x64-msvc': 4.64.6
       fsevents: 2.3.3
 
-  scheduler@0.28.0: {}
+  scheduler@0.26.0: {}
 
   semver@6.3.1: {}
 
@@ -1464,7 +1464,7 @@ snapshots:
       fdir: 6.5.0(picomatch@4.0.7)
       picomatch: 4.0.7
 
-  typescript@5.9.3: {}
+  typescript@5.8.3: {}
 
   undici-types@6.21.0: {}
 
@@ -1479,7 +1479,7 @@ snapshots:
       escalade: 3.2.0
       picocolors: 1.1.1
 
-  vite@6.4.4(@types/node@22.20.5):
+  vite@6.3.5(@types/node@22.15.21):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.7)
@@ -1488,7 +1488,7 @@ snapshots:
       rollup: 4.64.6
       tinyglobby: 0.2.17
     optionalDependencies:
-      '@types/node': 22.20.5
+      '@types/node': 22.15.21
       fsevents: 2.3.3
 
   yallist@3.1.1: {}
