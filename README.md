@@ -1,6 +1,6 @@
-# PXmer
+# 🚥 PXmer
 
-Aplicación de escritorio de temporizador Pomodoro con estética oscura de terminal, inspirada visualmente en [Tuime](https://github.com/nthnd/tuime). Sin backend, sin cuentas. Construida con **Tauri 2 + React + TypeScript**.
+Aplicación de escritorio de temporizador Pomodoro con estética oscura de terminal, inspirada visualmente en [Tuime](https://github.com/nthnd/tuime).
 
 ## Requisitos
 
@@ -24,19 +24,13 @@ pnpm tauri dev
 | `pnpm dev` | Solo el servidor Vite del renderer (sin shell Tauri) |
 | `pnpm build` | Solo el build del renderer en `dist-web/` |
 
-## Generar el instalador
+## Instalador
 
 ```bash
 pnpm tauri build
 ```
 
-El resultado es **`src-tauri/target/release/bundle/nsis/pxmer_1.0.0_x64-setup.exe`**: un instalador ligero (unos pocos MB) que usa el WebView2 del sistema en lugar de empaquetar un navegador completo.
-
-Para publicarlo en un Release de GitHub: pestaña **Releases** → **Draft a new release** → adjuntar el `.exe` como asset.
-
-## Nota sobre el ícono
-
-El ícono vive en `src-tauri/icons/icon.ico` (multi-tamaño, incluye 256×256 px). Si necesitas regenerar el set completo, usa `pnpm tauri icon <origen.png>` con una imagen cuadrada de al menos 1024×1024 px.
+El instalador NSIS queda en `src-tauri/target/release/bundle/nsis/` (unos 2 MB). Usa el WebView2 del sistema, no empaqueta un navegador.
 
 ## Atajos de teclado (con la app enfocada)
 
@@ -53,8 +47,7 @@ Durante el descanso o en el popup de límite, `Espacio` no hace nada (el descans
 - **Trabajo:** cuenta regresiva (25 min por defecto, rango 5–90 min), pausable.
 - **Descanso:** cuenta ascendente, arranca automático (límite 10 min por defecto, rango 1–20 min). Al llegar al límite aparece un popup con **Siguiente** / **Terminar** y notificación de escritorio.
 
-Los ajustes se configuran antes de iniciar y quedan fijos durante la sesión; los cambios se aplican en la siguiente.
-Se guardan en `settings.json` dentro de `%APPDATA%\com.pxmer.app\`, junto con la preferencia de tema (oscuro por defecto).
+Los ajustes se guardan en `settings.json` dentro de `%APPDATA%\com.pxmer.app\`, junto con la preferencia de tema (oscuro por defecto).
 
 ## Estructura
 
