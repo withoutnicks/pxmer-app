@@ -1,6 +1,7 @@
 import { useEffect, useState, type JSX } from "react";
 import type { Settings, Theme } from "@shared/settings";
 import type { Action, SessionState } from "@shared/session";
+import { api } from "./api";
 import { Menu } from "./components/Menu";
 import { TimerView } from "./components/TimerView";
 import { useSessionKeys } from "./hooks/useSessionKeys";
@@ -14,14 +15,14 @@ function App(): JSX.Element {
   const playTap = useTapSound();
   const playToggle = useToggleSound();
 
-  // El proceso main manda el estado; el renderer solo lo pinta.
+  // El backend manda el estado; el renderer solo lo pinta.
   useEffect(() => {
-    const stop = window.pxmer.onSessionState(setSession);
+    const stop = api.onSessionState(setSession);
     return stop;
   }, []);
 
   useEffect(() => {
-    window.pxmer.getSettings().then(setSettings);
+    api.getSettings().then(setSettings);
   }, []);
 
   useEffect(() => {
@@ -31,7 +32,7 @@ function App(): JSX.Element {
   }, [settings?.theme]);
 
   const dispatch = (action: Action): void => {
-    window.pxmer.sessionDispatch(action).then(setSession);
+    api.sessionDispatch(action).then(setSession);
   };
 
   const update = (patch: Partial<Settings>): void => {
@@ -58,10 +59,10 @@ function App(): JSX.Element {
 
   const handleStart = async (): Promise<void> => {
     if (!canStart) return;
-    await window.pxmer.saveSettings(settings);
-    // Arranca el reloj de main y le pide que arranque el trabajo.
+    await api.saveSettings(settings);
+    // Arranca el reloj del backend y le pide que empiece el trabajo.
     playTap();
-    await window.pxmer.sessionStart();
+    await api.sessionStart();
     dispatch({
       type: "START_WORK",
       workMin: settings.workMinutes,
@@ -74,7 +75,7 @@ function App(): JSX.Element {
     const next = { ...settings, theme: nextTheme };
     playToggle();
     setSettings(next);
-    await window.pxmer.saveSettings(next);
+    await api.saveSettings(next);
   };
 
   if (session.kind !== "idle") {

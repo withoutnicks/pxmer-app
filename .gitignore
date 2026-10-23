@@ -78,6 +78,12 @@ web_modules/
 .next
 out
 
+# Tauri renderer build output
+dist-web
+
+# Local skill registry cache (agent tooling)
+.atl/
+
 # Nuxt.js build / generate output
 .nuxt
 dist
@@ -147,3 +153,6 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# engram
+.atl

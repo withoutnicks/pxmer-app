@@ -2,15 +2,11 @@
   "name": "pxmer-app",
   "version": "1.0.0",
   "description": "Temporizador Pomodoro con estética oscura de terminal",
-  "main": "./out/main/index.js",
   "scripts": {
-    "postinstall": "node node_modules/electron/install.js",
-    "dev": "electron-vite dev",
-    "build": "electron-vite build",
-    "preview": "electron-vite preview",
-    "start": "electron .",
-    "dist": "electron-builder",
-    "dist:win": "electron-builder --win"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
   },
   "devEngines": {
     "packageManager": {
@@ -21,18 +17,14 @@
   },
   "packageManager": "pnpm@12.11.2",
   "dependencies": {
-    "@electron-toolkit/utils": "4.0.0",
-    "electron-log": "5.3.4"
+    "@tauri-apps/api": "2.12.4"
   },
   "devDependencies": {
-    "@electron-toolkit/preload": "3.0.1",
+    "@tauri-apps/cli": "2.12.4",
     "@types/node": "22.15.21",
     "@types/react": "19.1.4",
     "@types/react-dom": "19.1.5",
     "@vitejs/plugin-react": "4.5.2",
-    "electron": "44.7.1",
-    "electron-builder": "^26.15.3",
-    "electron-vite": "3.1.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "typescript": "5.8.3",
