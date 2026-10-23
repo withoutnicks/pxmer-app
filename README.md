@@ -30,7 +30,7 @@ pnpm tauri dev
 pnpm tauri build
 ```
 
-El instalador NSIS queda en `src-tauri/target/release/bundle/nsis/` (unos 2 MB). Usa el WebView2 del sistema, no empaqueta un navegador.
+El instalador NSIS queda en `src-tauri/target/release/bundle/nsis/`
 
 ## Atajos de teclado
 
