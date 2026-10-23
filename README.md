@@ -5,10 +5,10 @@ Aplicación de escritorio de temporizador Pomodoro con estética oscura de termi
 ## Requisitos
 
 - Node.js y pnpm
-- Rust con toolchain MSVC (`rustup`, `cargo`) — el build de Windows se compila desde Windows
+- Rust con toolchain MSVC (`rustup`, `cargo`)
 - WebView2 (preinstalado en Windows 10/11)
 
-## Instalación y desarrollo
+## Instalación
 
 ```bash
 pnpm install
@@ -24,7 +24,7 @@ pnpm tauri dev
 | `pnpm dev` | Solo el servidor Vite del renderer (sin shell Tauri) |
 | `pnpm build` | Solo el build del renderer en `dist-web/` |
 
-## Instalador
+## Build
 
 ```bash
 pnpm tauri build
@@ -32,7 +32,7 @@ pnpm tauri build
 
 El instalador NSIS queda en `src-tauri/target/release/bundle/nsis/` (unos 2 MB). Usa el WebView2 del sistema, no empaqueta un navegador.
 
-## Atajos de teclado (con la app enfocada)
+## Atajos de teclado
 
 | Tecla | Acción |
 |-------|--------|
@@ -40,12 +40,12 @@ El instalador NSIS queda en `src-tauri/target/release/bundle/nsis/` (unos 2 MB).
 | `R` | Terminar la sesión y volver al menú |
 | `W` | Terminar el descanso anticipadamente e iniciar el siguiente trabajo |
 
-Durante el descanso o en el popup de límite, `Espacio` no hace nada (el descanso no es pausable).
+Durante el descanso o en el popup de límite, `Espacio` no hace nada.
 
 ## Ciclo
 
-- **Trabajo:** cuenta regresiva (25 min por defecto, rango 5–90 min), pausable.
-- **Descanso:** cuenta ascendente, arranca automático (límite 10 min por defecto, rango 1–20 min). Al llegar al límite aparece un popup con **Siguiente** / **Terminar** y notificación de escritorio.
+- **Trabajo:** cuenta regresiva (25 min por defecto), pausable.
+- **Descanso:** cuenta ascendente, arranca automático (límite 10 min por defecto).
 
 Los ajustes se guardan en `settings.json` dentro de `%APPDATA%\com.pxmer.app\`, junto con la preferencia de tema (oscuro por defecto).
 
